@@ -1,0 +1,20 @@
+.welcome_section {
+	width: 100%;
+	height: 900px;
+	background-image: url(../img/welcome_section/bg.svg);
+	background-position: center;
+	&__content {
+		text-align: center;
+		width: 100%;
+		height: 100%;
+		color: #fff;
+		top: 0;
+	}
+	&__title {
+		font-size: 96px;
+	}
+	&__subtitle {
+		opacity: 0.5;
+		font-size: 14px;
+	}
+}
