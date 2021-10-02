@@ -30,11 +30,12 @@
 		height: 22.63px;
 		margin: 316px auto 10px auto;
 		opacity: 0.7;
+		animation: welcome_arrow_animation 3s infinite;
 		&:before,
 		&:after {
 			position:absolute;
 			bottom: 0;
-			left: 46%;
+			
 			margin: 0 auto 0 auto;
 			content: '';
 			width: 32px;
@@ -47,5 +48,16 @@
 		&:after {
 			transform: rotate(-45deg) translate3d(50%, 0px, 0px);
 		}
+	}
+}
+@keyframes welcome_arrow_animation {
+	0% {
+		transform: translate3d(-15px, 10px, 0px);
+	}
+	50% {
+		transform: translate3d(-15px, 0px, 0px);	
+	}
+	100% {
+		transform: translate3d(-15px, 10px, 0px);
 	}
 }

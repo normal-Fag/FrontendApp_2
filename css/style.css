@@ -214,11 +214,12 @@ body.lock {
   height: 22.63px;
   margin: 316px auto 10px auto;
   opacity: 0.7;
+  -webkit-animation: welcome_arrow_animation 3s infinite;
+          animation: welcome_arrow_animation 3s infinite;
 }
 .welcome_section__arrow:before, .welcome_section__arrow:after {
   position: absolute;
   bottom: 0;
-  left: 46%;
   margin: 0 auto 0 auto;
   content: "";
   width: 32px;
@@ -232,4 +233,34 @@ body.lock {
 .welcome_section__arrow:after {
   -webkit-transform: rotate(-45deg) translate3d(50%, 0px, 0px);
           transform: rotate(-45deg) translate3d(50%, 0px, 0px);
+}
+
+@-webkit-keyframes welcome_arrow_animation {
+  0% {
+    -webkit-transform: translate3d(-15px, 10px, 0px);
+            transform: translate3d(-15px, 10px, 0px);
+  }
+  50% {
+    -webkit-transform: translate3d(-15px, 0px, 0px);
+            transform: translate3d(-15px, 0px, 0px);
+  }
+  100% {
+    -webkit-transform: translate3d(-15px, 10px, 0px);
+            transform: translate3d(-15px, 10px, 0px);
+  }
+}
+
+@keyframes welcome_arrow_animation {
+  0% {
+    -webkit-transform: translate3d(-15px, 10px, 0px);
+            transform: translate3d(-15px, 10px, 0px);
+  }
+  50% {
+    -webkit-transform: translate3d(-15px, 0px, 0px);
+            transform: translate3d(-15px, 0px, 0px);
+  }
+  100% {
+    -webkit-transform: translate3d(-15px, 10px, 0px);
+            transform: translate3d(-15px, 10px, 0px);
+  }
 }
