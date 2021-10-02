@@ -28,12 +28,13 @@ h6{
 }
 html,
 body{
+	color: #000;
 	height: 100%;
 	line-height: 1;
 	font-size: 14px;
-	font-family: 'Roboto', sans-serif;
+	min-width: 413px;
 	font-weight: normal;
 	font-style: normal;
-	color: #000;
-	background-color: #8c8c8c;
+	font-family: 'Roboto', sans-serif;
+	// background-color: #8c8c8c;
 }
