@@ -16,7 +16,6 @@
 		width: 48px;
 		height: 43px;
 		overflow: hidden;
-		position: relative;
 		img {
 			width: 48px;
 			max-width: 100%;
@@ -28,7 +27,7 @@
 		height: 16px;
 		display: block;
 		position: relative;
-		transition: all 0.3s ease 0s;
+		transition: all 0.5s ease 0s;
 		span {
 			left: 0;
 			top: 6.7px;
@@ -55,6 +54,7 @@
 			bottom: 0;
 		}
 		&.active{
+			transform: translate3d(0px, 818px, 0px);
 			span{
 				transform: scale(0);
 			}

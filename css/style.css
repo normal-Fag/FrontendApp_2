@@ -69,7 +69,6 @@ body {
   width: 48px;
   height: 43px;
   overflow: hidden;
-  position: relative;
 }
 .header__logo img {
   width: 48px;
@@ -81,8 +80,8 @@ body {
   height: 16px;
   display: block;
   position: relative;
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 .header__burger span {
   left: 0;
@@ -109,6 +108,10 @@ body {
 }
 .header__burger:after {
   bottom: 0;
+}
+.header__burger.active {
+  -webkit-transform: translate3d(0px, 818px, 0px);
+          transform: translate3d(0px, 818px, 0px);
 }
 .header__burger.active span {
   -webkit-transform: scale(0);
@@ -210,6 +213,7 @@ body.lock {
   width: 45.63px;
   height: 22.63px;
   margin: 316px auto 10px auto;
+  opacity: 0.7;
 }
 .welcome_section__arrow:before, .welcome_section__arrow:after {
   position: absolute;
