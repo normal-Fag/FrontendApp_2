@@ -190,6 +190,7 @@ body {
   margin: 0px auto;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
+  padding: 0 15px;
 }
 
 body.lock {
