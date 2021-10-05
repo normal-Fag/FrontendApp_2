@@ -291,3 +291,28 @@ body.lock {
             transform: translate3d(-15px, 10px, 0px);
   }
 }
+.sightseens__item {
+  margin-bottom: 55px;
+}
+.sightseens__img {
+  width: 380px;
+  height: 297px;
+  margin: 0 auto;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 5px 5px;
+          box-shadow: 0px 5px 5px;
+  margin-bottom: 25px;
+}
+.sightseens__title {
+  color: #585858;
+  font-weight: 500;
+  line-height: 28px;
+  font-style: normal;
+  margin-bottom: 28px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+.sightseens__text {
+  font-size: 14px;
+  line-height: 16px;
+}
