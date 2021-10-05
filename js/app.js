@@ -1,7 +1,7 @@
-console.log("Hello")
-$(document).ready(function(){
-	$('.header__burger').click(function(event){
-		$('.header__burger, .menu').toggleClass('active');
-		$('body').toggleClass('lock');
-	})
+const burger = document.querySelector('.header__burger');
+const menu  = document.querySelector('.menu');
+
+burger.addEventListener('click', function() {
+	menu.classList.toggle('active');
+	burger.classList.toggle('active');
 })

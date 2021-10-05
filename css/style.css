@@ -82,6 +82,7 @@ body {
   position: relative;
   -webkit-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
+  background: none;
 }
 .header__burger span {
   left: 0;
@@ -195,7 +196,6 @@ body.lock {
   text-align: center;
   margin-top: 387px;
   width: 100%;
-  max-height: 900px;
   color: #fff;
   top: 0;
 }
