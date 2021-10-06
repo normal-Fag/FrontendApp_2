@@ -1,7 +1,1 @@
-const burger = document.querySelector('.header__burger');
-const menu  = document.querySelector('.menu');
-
-burger.addEventListener('click', function() {
-	menu.classList.toggle('active');
-	burger.classList.toggle('active');
-})
+const body=document.querySelector("body"),burger=document.querySelector(".header__burger"),header=document.querySelector(".header"),menu=document.querySelector(".menu");var welcome_section=document.querySelector(".welcome_section"),sightseens_section=document.querySelector(".sightseens_section"),main_link=document.querySelector("#main"),sightseens_link=document.querySelector("#sightseens"),tours_link=document.querySelector("#tours"),contacts_link=document.querySelector("#contacts");function scrollTo(e){window.scroll({left:0,top:e.offsetTop,behavior:"smooth"})}burger.addEventListener("click",(function(){menu.classList.toggle("active"),burger.classList.toggle("active"),body.classList.toggle("lock"),header.classList.toggle("active")})),window.addEventListener("scroll",(function(){window.pageYOffset>welcome_section.scrollHeight?header.classList.add("scrolling"):header.classList.remove("scrolling")})),main_link.addEventListener("click",(()=>{scrollTo(welcome_section)})),sightseens_link.addEventListener("click",(()=>{scrollTo(sightseens_section)}));
