@@ -6,7 +6,6 @@
 	<title>FrontendApp_2</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Roboto:wght@100;300;400;500;700&display=swap&subset=cyrillic-ext" rel="stylesheet">
-    <!-- <script type="text/javascript" src="js/app.js"></script> -->
 </head>
 <body>
     <header class="header">
@@ -20,16 +19,16 @@
             <nav class="menu">
                 <ul class="menu__list">
                     <li class="menu__item">
-                        <a href="" class="menu__link" id="main">Главная</a>
+                        <a href="welcome_section" class="menu__link">Главная</a>
                     </li>
                     <li class="menu__item">
-                        <a href="" class="menu__link" id="sightseens">Достопримечательности</a>
+                        <a href="sightseens" class="menu__link">Достопримечательности</a>
                     </li>
                     <li class="menu__item">
-                        <a href="" class="menu__link" id="tours">Туры</a>
+                        <a href="tours" class="menu__link">Туры</a>
                     </li>
                     <li class="menu__item">
-                        <a href="" class="menu__link" id="contacts">Контакты</a>
+                        <a href="contacts" class="menu__link">Контакты</a>
                     </li>
                 </ul>
             </nav>
@@ -49,62 +48,111 @@
                 </div>
             </div>
         </section>
-        <section class="sightseens">
+        <section class="sightseens" id="sightseens">
             <div class="sightseens__container container">
                 <h2 class="title">Достопримечательности</h2>
                 <div class="sightseens__item">
                     <div class="sightseens__img">
-                        <img src="img/sightseens/b.jpg" alt="" class="sightseens__img">
+                        <img src="img/sightseens/b.jpg" alt="">
                     </div>
                     <h3 class="sightseens__title subtitle">Тропа предков</h3>
                     <p class="sightseens__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pretium orci at rutrum pellentesque. Vivamus id nunc at ante vulputate egestas. Sed varius elit ornare condimentum fermentum. Integer mattis pretium tortor dictum tristique. Donec in congue mauris. Quisque vitae nisi ultricies, efficitur odio vel, porta nulla. Donec porta, mauris nec pharetra mollis, diam lorem luctus velit, nec ultricies nunc quam posuere dui. Donec at nisl lorem. Sed vitae sapien metus. In erat felis, pharetra vitae libero eu, posuere accumsan odio...</p>
                 </div>
                 <div class="sightseens__item">
                      <div class="sightseens__img">
-                        <img src="img/sightseens/b.jpg" alt="" class="sightseens__img">
+                        <img src="img/sightseens/b.jpg" alt="">
                     </div>
                     <h3 class="sightseens__title subtitle">Приисковвый</h3>
                     <p class="sightseens__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pretium orci at rutrum pellentesque. Vivamus id nunc at ante vulputate egestas. Sed varius elit ornare condimentum fermentum. Integer mattis pretium tortor dictum tristique. Donec in congue mauris. Quisque vitae nisi ultricies, efficitur odio vel, porta nulla. Donec porta, mauris nec pharetra mollis, diam lorem luctus velit, nec ultricies nunc quam posuere dui. Donec at nisl lorem. Sed vitae sapien metus. In erat felis, pharetra vitae libero eu, posuere accumsan odio...</p>
                 </div>
                 <div class="sightseens__item">
                     <div class="sightseens__img">
-                        <img src="img/sightseens/b.jpg" alt="" class="sightseens__img">
+                        <img src="img/sightseens/b.jpg" alt="">
                     </div>
                     <h3 class="sightseens__title subtitle">Сундуки</h3>
                     <p class="sightseens__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pretium orci at rutrum pellentesque. Vivamus id nunc at ante vulputate egestas. Sed varius elit ornare condimentum fermentum. Integer mattis pretium tortor dictum tristique. Donec in congue mauris. Quisque vitae nisi ultricies, efficitur odio vel, porta nulla. Donec porta, mauris nec pharetra mollis, diam lorem luctus velit, nec ultricies nunc quam posuere dui. Donec at nisl lorem. Sed vitae sapien metus. In erat felis, pharetra vitae libero eu, posuere accumsan odio...</p>
                 </div>
             </div>
         </section>
-        <section class="tours container">
+        <section class="tours container" id="tours">
             <h2 class="title">Туры</h2>
-
-            <div class="tours__item">
-                <div class="tours__gradient">
-                    <div class="tours__content">
-                        <h3 class="tours__name">Название</h3>
-                        <p class="tours__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pretium orci at rutrum pellentesque.</p>
-                        <div class="tours__buy">
-                            <h2 class="tours__price">От <b>10 000</b> р.</h2>
-                            <button class="tours__btn">Купить</button>
+            <ul class="tours__list">
+                <li class="tours__item">
+                    <div class="tours__gradient">
+                        <div class="tours__content">
+                            <h3 class="tours__name">Название</h3>
+                            <p class="tours__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pretium orci at rutrum pellentesque.</p>
+                            <div class="tours__buy">
+                                <p class="tours__price">От <b>10 000</b> р.</p>
+                                <a class="tours__btn">Купить</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="tours__item">
-                <div class="tours__gradient">
-                    <div class="tours__content">
-                        <h3 class="tours__name">Название</h3>
-                        <p class="tours__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pretium orci at rutrum pellentesque.</p>
-                        <div class="tours__buy">
-                            <h2 class="tours__price">От <b>10 000</b> р.</h2>
-                            <button class="tours__btn">Купить</button>
+                </li>
+                 <li class="tours__item">
+                    <div class="tours__gradient">
+                        <div class="tours__content">
+                            <h3 class="tours__name">Название</h3>
+                            <p class="tours__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pretium orci at rutrum pellentesque.</p>
+                            <div class="tours__buy">
+                                <p class="tours__price">От <b>10 000</b> р.</p>
+                                <a class="tours__btn">Купить</a>
+                            </div>
                         </div>
                     </div>
+                </li>
+                 <li class="tours__item none">
+                    <div class="tours__gradient">
+                        <div class="tours__content">
+                            <h3 class="tours__name">Название</h3>
+                            <p class="tours__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pretium orci at rutrum pellentesque.</p>
+                            <div class="tours__buy">
+                                <p class="tours__price">От <b>10 000</b> р.</p>
+                                <a class="tours__btn">Купить</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                 <li class="tours__item none">
+                    <div class="tours__gradient">
+                        <div class="tours__content">
+                            <h3 class="tours__name">Название</h3>
+                            <p class="tours__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pretium orci at rutrum pellentesque.</p>
+                            <div class="tours__buy">
+                                <p class="tours__price">От <b>10 000</b> р.</p>
+                                <a class="tours__btn">Купить</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                 <li class="tours__item none">
+                    <div class="tours__gradient">
+                        <div class="tours__content">
+                            <h3 class="tours__name">Название</h3>
+                            <p class="tours__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pretium orci at rutrum pellentesque.</p>
+                            <div class="tours__buy">
+                                <p class="tours__price">От <b>10 000</b> р.</p>
+                                <a class="tours__btn">Купить</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                 <li class="tours__item none">
+                    <div class="tours__gradient">
+                        <div class="tours__content">
+                            <h3 class="tours__name">Название</h3>
+                            <p class="tours__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pretium orci at rutrum pellentesque.</p>
+                            <div class="tours__buy">
+                                <p class="tours__price">От <b>10 000</b> р.</p>
+                                <a class="tours__btn">Купить</a>
+                            </div>
+                        </div>
+                    </div>
+                </li> 
+                <div class="tours__more">
+                    <a href="">Больше туров</a>
                 </div>
-            </div>
-            <div class="tours__more">
-                <a href="">Больше туров</a>
-            </div>
+            </ul>
         </section>
     </main>
     <footer>
