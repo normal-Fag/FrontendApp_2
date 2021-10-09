@@ -304,8 +304,19 @@ body.lock {
   margin-bottom: 55px;
 }
 .sightseens__img {
-  width: 380px;
-  height: 297px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.sightseens__img img {
+  max-width: 100%;
+  height: 100%;
   margin: 0 auto;
   border-radius: 20px;
   -webkit-box-shadow: 0px 5px 5px;
@@ -324,4 +335,83 @@ body.lock {
 .sightseens__text {
   font-size: 14px;
   line-height: 16px;
+}
+
+.tours {
+  margin-bottom: 16px;
+  height: 100vh;
+  font-family: "Roboto";
+}
+.tours__gradient {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  bottom: 0;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(70%, white), to(transparent));
+  background: linear-gradient(to top, white 70%, transparent);
+  opacity: 0.9;
+}
+.tours__list {
+  height: 90%;
+}
+.tours__item {
+  width: 100%;
+  height: 45%;
+  position: relative;
+  margin-bottom: 20px;
+  background-image: url(../img/tours/item_bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tours__item.none {
+  display: none;
+}
+.tours__content {
+  position: absolute;
+  padding: 0 24px;
+  bottom: 34px;
+}
+.tours__name {
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 21px;
+}
+.tours__description {
+  font-weight: 200;
+  line-height: 16px;
+  margin-bottom: 15px;
+  color: #000;
+}
+.tours__buy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.tours__price {
+  font-weight: 200;
+  font-size: 24px;
+}
+.tours__btn {
+  color: #C3B182;
+  padding: 14px 25px;
+  border: 1px solid;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  background: transparent;
+}
+.tours__more {
+  text-align: center;
+}
+.tours__more a {
+  color: #9F9F9F;
+  border-bottom: 1px solid;
 }
