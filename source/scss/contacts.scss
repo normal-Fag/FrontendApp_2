@@ -1,50 +1,32 @@
 .contacts {
 	margin-bottom: 115px;
 	&__content {
-
 	}
 	&__items {
-
+		padding-left: 29px;
 	}
 	&__item {
-		padding-left: 44px;
+		display: flex;
+		align-items:center;
 		margin-bottom: 21px;
-		font-size: 14px;
-		font-weight: normal;
-		line-height: 16px;
-		font-style: normal;
-		&.adres:before {
-			content: '';
-			position: absolute;
-			padding-bottom: 12px;
-			left: 15px;
-			min-width: 24px;
-			min-height: 24px;
-			background: url(../img/contacts/Vector-2.svg) center no-repeat;
+		padding-left: 14px;
+		& img {
+
 		}
-		&.phone:before {
-			content: '';
-			position: absolute;
-			padding-bottom: 12px;
-			left: 15px;
-			min-width: 24px;
-			min-height: 24px;
-			background: url(../img/contacts/Vector-3.svg) center no-repeat;
+		& p {
+			margin-left: 15px;
+			line-height: 16px;
 		}
-		&.mail:before {
-			content: '';
-			position: absolute;
-			padding-bottom: 12px;
-			left: 15px;
-			min-width: 24px;
-			min-height: 24px;
-			background: url(../img/contacts/Vector.svg) center no-repeat;
+		&.second_phone {
+			padding-left: 32px;
 		}
 	}
 	&__map {
+		position:relative;
 		margin-top: 49px;
+		width: 100%;
 		img{
-			max-width: 100% ;
+			width: 100%;
 			padding: 0;
 		}
 
