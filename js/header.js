@@ -4,7 +4,7 @@ const header = document.querySelector('.header');
 const menu  = document.querySelector('.menu');
 
 // Секции
-var welcome_section = document.querySelector('.welcome_section');
+const welcome_section = document.querySelector('.welcome_section');
 
 // Обработка нажатия на Burger menu
 burger.addEventListener('click', function() {
@@ -49,3 +49,27 @@ for (let link of menuLinks) {
 		menu.classList.remove('active');
 	})
 }
+
+// Унопка "Больше туров"
+
+const moreToursBtn = document.querySelector('.tours__more');
+
+moreToursBtn.addEventListener('click', () => {
+	let noneTours = document.querySelectorAll('.tours__item[id]');
+
+	noneTours.forEach(element => element.classList.toggle('none'));
+
+	 if(moreToursBtn.querySelector('button').innerText.toLowerCase() === 'less') {
+    	moreToursBtn.querySelector('button').innerText = 'Больше  туров';
+	}
+	  else {
+	    moreToursBtn.querySelector('button').innerText = 'Less';
+	}
+})
+
+
+
+
+
+
+
