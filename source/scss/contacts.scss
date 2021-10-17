@@ -1,6 +1,10 @@
 .contacts {
 	margin-bottom: 115px;
 	&__content {
+		h2 {
+			line-height: 61px;
+			font-size: 48px;
+		}
 	}
 	&__items {
 		padding-left: 29px;

@@ -344,7 +344,7 @@ body.lock {
 .tours__gradient {
   position: absolute;
   width: 100%;
-  height: 50%;
+  height: 60%;
   bottom: 0;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(70%, white), to(transparent));
   background: linear-gradient(to top, white 70%, transparent);
@@ -355,7 +355,7 @@ body.lock {
 }
 .tours__item {
   width: 100%;
-  height: 46vh;
+  min-height: 46vh;
   position: relative;
   margin-bottom: 20px;
   background-image: url(../img/tours/item_bg.jpg);
@@ -419,6 +419,10 @@ body.lock {
 .contacts {
   margin-bottom: 115px;
 }
+.contacts__content h2 {
+  line-height: 61px;
+  font-size: 48px;
+}
 .contacts__items {
   padding-left: 29px;
 }
@@ -456,7 +460,7 @@ body.lock {
 }
 
 .footer {
-  height: 77px;
+  min-height: 77px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

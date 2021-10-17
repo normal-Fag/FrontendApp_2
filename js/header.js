@@ -43,7 +43,7 @@ for (let link of menuLinks) {
 			behavior: 'smooth'
 		})
 
-		menu.classList.remove('lock');
+		body.classList.remove('lock');
 		header.classList.remove('active');
 		burger.classList.remove('active');
 		menu.classList.remove('active');
