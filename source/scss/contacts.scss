@@ -1,0 +1,44 @@
+.contacts {
+	margin-bottom: 115px;
+	&__content {
+		h2 {
+			line-height: 61px;
+			font-size: 48px;
+		}
+	}
+	&__items {
+		padding-left: 29px;
+	}
+	&__item {
+		display: flex;
+		align-items:center;
+		margin-bottom: 21px;
+		padding-left: 14px;
+		& img {
+
+		}
+		& p {
+			margin-left: 15px;
+			line-height: 16px;
+		}
+		& a{
+			color: #111;
+			text-decoration: none;
+			margin-left: 15px;
+			line-height: 16px;
+		}
+		&.second_phone {
+			padding-left: 32px;
+		}
+	}
+	&__map {
+		position:relative;
+		margin-top: 49px;
+		width: 100%;
+		img{
+			width: 100%;
+			padding: 0;
+		}
+
+	}
+}

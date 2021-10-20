@@ -1,0 +1,21 @@
+.title {
+	font-family: "Amatic SC";
+	text-align: center;
+	font-size: 36px;
+	margin: 52px auto;
+}
+.subtitle {
+	font-family: "Roboto";
+	font-size: 24px;
+}
+.container{
+	max-width: 100%;
+	margin: 0px auto;
+	box-sizing: content-box;
+	padding: 0 15px;
+}
+body{
+	&.lock{
+		overflow: hidden;
+	}
+}
