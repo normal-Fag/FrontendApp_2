@@ -21,8 +21,8 @@
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
-		// transition: all 0.5s ease 0s; 
-		&.none {
+		font-family: Roboto;
+		&__hidden {
 			display: none;
 			// transform: scale3d(0, 0, 1);
 		}

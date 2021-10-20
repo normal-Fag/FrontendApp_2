@@ -4,7 +4,7 @@ const header = document.querySelector('.header');
 const menu  = document.querySelector('.menu');
 
 // Секции
-const welcome_section = document.querySelector('.welcome_section');
+const welcome_section = document.querySelector('.welcome-section');
 
 // Обработка нажатия на Burger menu
 burger.addEventListener('click', function() {
@@ -53,11 +53,12 @@ for (let link of menuLinks) {
 // Унопка "Больше туров"
 
 const moreToursBtn = document.querySelector('.tours__more');
+const noneTours = document.querySelectorAll('.tours__item__hidden');
 
 moreToursBtn.addEventListener('click', () => {
-	let noneTours = document.querySelectorAll('.tours__item[id]');
+	// let noneTours = document.querySelectorAll('.tours__item[id]');
 
-	noneTours.forEach(element => element.classList.toggle('none'));
+	noneTours.forEach(element => element.classList.toggle('tours__item__hidden'));
 
 	 if(moreToursBtn.querySelector('button').innerText.toLowerCase() === 'less') {
     	moreToursBtn.querySelector('button').innerText = 'Больше  туров';
