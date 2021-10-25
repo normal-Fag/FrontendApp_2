@@ -1,6 +1,7 @@
 .welcome_section {
-	width: 100%;
+	max-width: 100%;
 	height: 100vh;
+	// padding-top: 10px;
 	background: url(../img/welcome_section/bg.svg) center/cover no-repeat;
 	&__content {
 		color: #fff;
@@ -27,7 +28,7 @@
 	}
 	&__arrow {
 		position: absolute;
-		bottom: 50px;
+		bottom: 20px;
 		left: calc(50%-23px);
 		width: 45.63px;
 		height: 22.63px;
@@ -37,8 +38,7 @@
 		&:after {
 			position:absolute;
 			bottom: 0;
-			margin: 0 auto;
-			left: 50%;
+			margin: 0 auto 0 auto;
 			content: '';
 			width: 32px;
 			height: 1px;
