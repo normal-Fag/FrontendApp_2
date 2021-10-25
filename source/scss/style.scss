@@ -1,9 +1,19 @@
 @import "zeroing.scss"; // Обнуление стилей
 
-@import "header_style.scss"; // Стили "шапки" сайта
+@import "header.scss"; // Стили "шапки" сайта
 
 @import "blanks.scss"; // Заготовки (Title, subtitle и т.д.)
 
-@import "welcome_section.scss"; // Импорт первой секции "Welcome section"
+@import "welcome.scss"; // Импорт стилей первой секции "Welcome section"
 
-@import "sightseens.scss"; // Импорт секции .sightseens
+@import "sightseens.scss"; // Импорт стилей секции .sightseens
+
+@import "tours.scss"; // Импорт стилей секции tours
+
+@import "contacts.scss"; // Импорт стилей секции Contacts
+
+@import "footer.scss"; // Импорт стилей footer'a
+
+// _____________________________________________________________________________
+
+// @import "header_desktop.scss";
