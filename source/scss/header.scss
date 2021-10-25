@@ -1,14 +1,18 @@
 .header {
+	left: 0;
+	top: 0px;
+	z-index: 50;
 	width: 100%;
 	position: fixed;
-	top: 0px;
-	left: 0;
-	z-index: 50;
+	transition: all 0.5s ease 0s;
+	&.scrolling {
+		background-color: #111;
+	}
 	&__container {
 		display: flex;
 		min-height: 72px;
-		align-items: center;
 		padding: 0px 30px;
+		align-items: center;
 		justify-content: space-between;
 	}
 	&__logo {
@@ -26,9 +30,9 @@
 		width: 24px;
 		height: 16px;
 		display: block;
+		background: none;
 		position: relative;
 		transition: all 0.5s ease 0s;
-		background: none;
 		span {
 			left: 0;
 			top: 6.7px;
@@ -55,7 +59,7 @@
 			bottom: 0;
 		}
 		&.active{
-			transform: translate3d(0px, 800px, 0px);
+			transform: translate3d(0px, 90vh, 0px);
 			span{
 				transform: scale(0);
 			}
@@ -71,22 +75,22 @@
 	}
 }
 .menu {
-	top: -100%;
 	left: 0;
+	opacity: 0;
+	top: -100%;
 	width: 100%;
 	height: 100%;
-	opacity: 0;
 	overflow: auto;
 	position: fixed;
 	// padding: 294px 0px 0px 0px;
 	transition: all 0.5s ease 0s;
 	&__list {
+		height: 100vh;
 		display:  flex;
+		text-align: center;
+		align-items: center;
 		flex-direction: column;
 		justify-content: center;
-		align-items: center;
-		text-align: center;
-		height: 100vh;
 	}
 	&__item {
 		margin: 0px 0px 20px 0px;
