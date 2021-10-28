@@ -10,7 +10,7 @@
 	}
 	&__container {
 		display: flex;
-		min-height: 72px;
+		height: 72px;
 		padding: 0px 30px;
 		align-items: center;
 		justify-content: space-between;
@@ -21,7 +21,7 @@
 		height: 43px;
 		overflow: hidden;
 		img {
-			width: 48px;
+			width: 100%;
 			max-width: 100%;
 		}
 	}
@@ -107,4 +107,39 @@
 		opacity: 0.7;
 		background-color: #111;
 	}
+}
+
+// ********************************************************
+// Desktop версия
+// ********************************************************
+@media (min-width: 1440px) {
+
+	.header {
+		padding-top: 38px;
+		&.scrolling {
+			top: 0;
+			padding: 0;
+		}
+		&__logo {
+			width: 80px;
+			height: 72px;
+		}
+		&__burger {
+			display: none;
+		}
+	}
+	.menu {
+		top: 0;
+		opacity: 1;
+		width: auto;
+		position: relative;
+		&__list {
+			flex-direction: row;
+			height: 100%;
+		}
+		&__item {
+			margin: 0 0 0 20px;
+		}
+	}
+	
 }
