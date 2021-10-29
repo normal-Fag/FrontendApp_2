@@ -8,7 +8,68 @@
 
 	&__content {
 	}
+	&__contacts  {
+		display: none;
+	}
 	&__text {
 		display: block;
 	}
+}
+.bottom-menu {
+	display: none;
+	&__list {
+	}
+	&__link {
+	}
+}
+
+
+// ********************************************************
+// Desktop версия
+// ********************************************************
+
+@media (min-width: 1440px) {
+
+	.footer {
+		display: block;
+		&__content  {
+			display: flex;
+			padding-top: 35px;
+			justify-content: space-between;
+		}
+		&__contacts {
+			display: block;
+			margin-left: 42px;
+			line-height: 16px;
+			font-style: normal;
+			font-weight: normal;
+		}
+		&__text {
+			margin-left: 132px;
+		}
+	}
+	.bottom-menu {
+	display: block;
+	margin-bottom: 105px;
+	&__title {
+		line-height: 16px;
+		font-weight: bold;
+		font-style: normal;
+		margin: 0 0 20px 0;
+		font-family: Roboto;
+	}
+	&__list {
+		opacity: 0.7;
+		font-weight: 200;
+		font-style: normal;
+		font-family: Roboto;
+	}
+	&__item:not(:last-child) {
+		margin-bottom: 10px;
+	}
+	&__link {
+		color: #FFF;
+	}
+}
+
 }

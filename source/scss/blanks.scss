@@ -2,11 +2,7 @@
 	font-family: "Amatic SC";
 	text-align: center;
 	font-size: 36px;
-	margin: 52px auto;
-}
-.subtitle {
-	font-family: "Roboto";
-	font-size: 24px;
+	// margin: 52px;
 }
 .container{
 	max-width: 100%;
@@ -17,5 +13,17 @@
 body{
 	&.lock{
 		overflow: hidden;
+	}
+}
+
+@media (min-width: 1440px) {
+	.title {
+		font-size: 48px;
+		line-height: 61px;
+		font-style: normal;
+		font-weight: normal;
+	}
+	.container {
+		padding: 0 126px;
 	}
 }

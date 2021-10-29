@@ -17,7 +17,7 @@ burger.addEventListener('click', function() {
 // Добавление background для header при скролле 
 window.addEventListener('scroll', function() {
 
-	if (window.pageYOffset > welcome_section.scrollHeight - 86) {
+	if (window.pageYOffset > welcome_section.scrollHeight - 100) {
 		header.classList.add('scrolling');
 	}
 	else {
@@ -27,7 +27,7 @@ window.addEventListener('scroll', function() {
 
 // Обработчик smooth scroll 
 
-const menuLinks = document.querySelectorAll('.menu__link');
+const menuLinks = document.querySelectorAll('.menu__link, .bottom-menu__link');
 
 for (let link of menuLinks) {
 	link.addEventListener('click', function(e) {
@@ -39,7 +39,7 @@ for (let link of menuLinks) {
 		console.log(blockValue);
 
 		window.scrollTo({
-			top: blockValue,
+			top: blockValue ,
 			behavior: 'smooth'
 		})
 
