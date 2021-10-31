@@ -8,6 +8,9 @@
 	&.scrolling {
 		background-color: #111;
 	}
+	&.active {
+		background-color: transparent;
+	}
 	&__container {
 		display: flex;
 		height: 72px;
