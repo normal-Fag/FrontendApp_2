@@ -55,6 +55,9 @@ body {
 .header.scrolling {
   background-color: #111;
 }
+.header.active {
+  background-color: transparent;
+}
 .header__container {
   display: -webkit-box;
   display: -ms-flexbox;
