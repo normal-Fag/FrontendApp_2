@@ -6,12 +6,15 @@
 	<title>FrontendApp_2</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Roboto:wght@100;300;400;500;700&display=swap&subset=cyrillic-ext" rel="stylesheet">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=b2254737-2757-42fd-891c-b1d5e098aafa&lang=ru_RU" type="text/javascript"></script>
+    <script type="text/javascript" src="js/map.js"></script>
+    <script type="text/javascript" src="js/header.js"></script>
 </head>
 <body>
     <header class="header">
         <div class="header__container container">
             <a href="#" class="header__logo">
-                <img src="img/welcome_section/logo 1.svg">
+                <!-- <img src="img/welcome_section/logo 1.svg"> -->
             </a>
             <button class="header__burger">
                 <span></span>
@@ -22,10 +25,10 @@
                         <a href="welcome-section" class="menu__link">Главная</a>
                     </li>
                     <li class="menu__item">
-                        <a href="sightseens__title" class="menu__link">Достопримечательности</a>
+                        <a href="sightseens" class="menu__link">Достопримечательности</a>
                     </li>
                     <li class="menu__item">
-                        <a href="tours__title" class="menu__link">Туры</a>
+                        <a href="tours" class="menu__link">Туры</a>
                     </li>
                     <li class="menu__item">
                         <a href="contacts" class="menu__link">Контакты</a>
@@ -61,6 +64,7 @@
                         <p class="sightseens__text-hidden">
                             Fusce eget mauris ullamcorper mi fermentum ullamcorper. Donec egestas mollis dolor, a dignissim dolor venenatis eu. Suspendisse quis quam laoreet, mattis neque eu, feugiat lectus. Maecenas non urna mollis, ultricies eros vel, ullamcorper risus. Nulla hendrerit venenatis erat, in rhoncus quam placerat nec. Ut feugiat nisi in mattis lacinia. Morbi eleifend, neque eget dapibus scelerisque, ligula nisl malesuada odio, et imperdiet metus mi pretium enim.
                         </p>
+                        <button class="sightseens__btn">...</button>
                     </div>
                 </div>
                 <div class="sightseens__item left-align">
@@ -116,7 +120,7 @@
                         </div>
                     </div>
                 </div>
-                 <div class="tours__item tours__item__hidden">
+                 <div class="tours__item tours__item--hidden">
                     <div class="tours__gradient">
                         <div class="tours__content">
                             <h3 class="tours__name">Название</h3>
@@ -128,7 +132,7 @@
                         </div>
                     </div>
                 </div>
-                 <div class="tours__item tours__item__hidden">
+                 <div class="tours__item tours__item--hidden">
                     <div class="tours__gradient">
                         <div class="tours__content">
                             <h3 class="tours__name">Название</h3>
@@ -140,7 +144,7 @@
                         </div>
                     </div>
                 </div>
-                 <div class="tours__item tours__item__hidden">
+                 <div class="tours__item tours__item--hidden">
                     <div class="tours__gradient">
                         <div class="tours__content">
                             <h3 class="tours__name">Название</h3>
@@ -152,7 +156,7 @@
                         </div>
                     </div>
                 </div>
-                 <div class="tours__item tours__item__hidden">
+                 <div class="tours__item tours__item--hidden">
                     <div class="tours__gradient">
                         <div class="tours__content">
                             <h3 class="tours__name">Название</h3>
@@ -165,7 +169,7 @@
                     </div>
                 </div> 
                 <div class="tours__more">
-                    <button href="">Больше туров</button>
+                    <button type="button" class="tours__more-btn">Больше туров</button>
                 </div>
             </div>
         </section>
@@ -173,19 +177,19 @@
             <h2 class="contacts__title title">Контакты</h2>
             <div class="contacts__content container">
                 <ul class="contacts__items">
-                    <li class="contacts__item">
-                        <img src="img/contacts/Vector-2.svg" alt="place">
+                    <li class="contacts__item contacts__item--place">
+                        <!-- <img src="img/contacts/Vector-2.svg" alt="place"> -->
                         <p>655019, Республика Хакасия, г. Абакан, пр. Ленина, д. 67</p>
                     </li>
-                    <li class="contacts__item">
-                        <img src="img/contacts/Vector-3.svg" alt="phone">
+                    <li class="contacts__item contacts__item--phone">
+                        <!-- <img src="img/contacts/Vector-3.svg" alt="phone"> -->
                         <a href="tel:83902225335">8 (3902) 22-53-35</a>
                     </li>
                     <li class="contacts__item second_phone">
                         <a href="tel:83902225335">8 (3902) 22-53-35</a>
                     </li>
-                    <li class="contacts__item">
-                        <img src="img/contacts/Vector.svg" alt="mail">
+                    <li class="contacts__item contacts__item--mail">
+                        <!-- <img src="img/contacts/Vector.svg" alt="mail"> -->
                         <a href="mailto:kancler@vskhakasia.ru">kancler@vskhakasia.ru</a>
                     </li>
                 </ul>
@@ -224,11 +228,5 @@
         </div>
         
     </footer>
-    <script type="text/javascript" src="js/app.js"></script>
-    <script type="text/javascript" src="js/map.js"></script>
-    <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9HRXcbEXO6MRip538duBTr0alBLSm6Yg&callback=initMap&libraries=&v=weekly"
-        async>
-    </script>
 </body>
 </html>
