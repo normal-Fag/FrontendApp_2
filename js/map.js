@@ -1,17 +1,33 @@
- // Initialize and add the map
-function initMap() {
-// The location of Uluru
-const uluru = { lat: 53.7211748, lng: 91.4424513 };
-// The map, centered at Uluru
-const map = new google.maps.Map(document.getElementById("map"), {
-  zoom: 17.28,
-  center: uluru,
-});
-// The marker, positioned at Uluru
-// const icon = '../img/Ti_24.jpg';
-const marker = new google.maps.Marker({
-  position: uluru,
-  map: map,
-  animation: google.maps.Animation.BOUNCE,
-});
+ymaps.ready(init);
+
+function init(){
+    var myMap = new ymaps.Map("map", {
+        center: [53.721642, 91.442226],
+        zoom: 16
+    });
+
+    // Создаем геообъект с типом геометрии "Точка".
+    myGeoObject = new ymaps.GeoObject({
+        // Описание геометрии.
+        geometry: {
+            type: "Point",
+            coordinates: [53.721642, 91.442226]
+        },
+        // Свойства.
+        properties: {
+            // Контент метки.
+            iconCaption: 'Агенство туризма Республики Хакасия',
+            hintContent: 'Республика Хакасия, г. Абакан, пр. Ленина, д. 67'
+        }
+    }, 
+    {
+        // Опции.
+        // Иконка метки будет растягиваться под размер ее содержимого.
+        preset: 'islands#dotIconWithCaption',
+        // Метку можно перемещать.
+        draggable: true
+    })
+
+     myMap.geoObjects
+        .add(myGeoObject)
 }
